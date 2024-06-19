@@ -18,9 +18,9 @@ const Homepage = () => {
       <Text style={[styles.seeAll, styles.yearTypo]}>See all</Text>
       <View style={[styles.greenBg, styles.greenBgPosition]} />
       <Image
-        style={[styles.maskGroupIcon, styles.greenBgPosition]}
+        style={[styles.maskGroupIconAskGroupIcon, styles.greenBgPosition]}
         contentFit="cover"
-        source={require("../assets/mask-group.png")}
+        source={require("../assets/Mask Group.png")}
       />
       <View style={styles.groupParent}>
         <View style={styles.accraGhanaParent}>

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Text, StyleSheet, View } from "react-native";
 import { Color, FontSize, FontFamily } from "../GlobalStyles";
 
-const Group = () => {
+const Wave = () => {
   return (
     <View style={styles.headlineParent}>
       <Text style={[styles.headline, styles.headlinePosition]}>
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Group;
+export default Wave;

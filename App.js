@@ -2,19 +2,20 @@ const Stack = createNativeStackNavigator();
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import JobizzText from "./components/JobizzText";
-import Homepage from "./screens/Homepage";
-import StatusBarIPhoneXOrNewe from "./components/StatusBarIPhoneXOrNewe";
-import HomeIndicator from "./components/HomeIndicator";
-import StatusBarIPhoneXOrNewe1 from "./components/StatusBarIPhoneXOrNewe1";
-import HaventAnAccount from "./components/HaventAnAccount";
-import Group from "./screens/Group";
-import Group1 from "./screens/Group1";
-import Group2 from "./components/Group2";
-import Group3 from "./components/Group3";
+import Jobizz from "../jobizz.js";
+import Homepage from "../homepage.js";
+import StatusBarIPhoneXOrNewe from "./components/statusBar.js";
+import HomeIndicator from "./components/HomeIndicator.js";
+import StatusBarIPhoneXOrNewe1 from "./components/StatusBar.js";
+import HaventAnAccount from ".../NoAccountyet.js";
+import Group from "../wave.js";
+import Group1 from "../login.js";
+import Group2 from "../continue.js";
+import Group3 from "../link.js";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
+import Wave from "./wave.js";
 
 const App = () => {
   const [hideSplashScreen, setHideSplashScreen] = React.useState(true);
@@ -41,13 +42,13 @@ const App = () => {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Group"
-              component={Group}
+              name="Wave"
+              component={Wave}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Group1"
-              component={Group1}
+              name="login"
+              component={login}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>
